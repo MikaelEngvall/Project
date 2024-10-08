@@ -157,5 +157,13 @@ console.log(countVowelsAccordingToEnglishGrammar("happy gym")); // 2
 console.log(isBalanced("(())")); // true
 ```
 
+### Getting Started
+
+Clone the repository and explore these utility functions:
+
+```bash
+git clone https://github.com/your-username/js-utility-functions.git
+cd js-utility-functions
+```
 
 
