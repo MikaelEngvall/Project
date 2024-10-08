@@ -166,4 +166,13 @@ git clone https://github.com/your-username/js-utility-functions.git
 cd js-utility-functions
 ```
 
+Feel free to modify and expand on these utilities!
+
+### Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+### License
+
+This project is licensed under the MIT License.
 
