@@ -80,19 +80,20 @@ ffunction areAnagrams(str1, str2) {
 }
 ```
 
-### 2. Find Largest Number in an Array
+### 6. Count Vowels in a String
 
-Finds the largest number in an array of numbers.
+Counts the number of vowels (both lowercase and uppercase) in a string.
 
 ```javascript
-function findLargest(arr) {
-  let largest = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > largest) {
-      largest = arr[i];
+function countVowels(str) {
+  const vowels = "aeiouAEIOU";
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+      count++;
     }
   }
-  return largest;
+  return count;
 }
 ```
 
