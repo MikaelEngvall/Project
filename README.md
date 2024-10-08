@@ -144,4 +144,18 @@ function isBalanced(str) {
 }
 ```
 
+### Sample outputs
+
+```javascript
+console.log(reverseString("Hello")); // "olleH"
+console.log(findLargest([3, 6, 2, 56, 32, 5, 89, 32])); // 89
+console.log(factorial(5)); // 120
+console.log(fibonacci(8)); // [0, 1, 1, 2, 3, 5, 8, 13]
+console.log(areAnagrams("listen", "silent")); // true
+console.log(countVowels("hellOoo world")); // 5
+console.log(countVowelsAccordingToEnglishGrammar("happy gym")); // 2
+console.log(isBalanced("(())")); // true
+```
+
+
 
