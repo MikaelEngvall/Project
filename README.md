@@ -33,3 +33,100 @@ function findLargest(arr) {
   return largest;
 }
 ```
+
+### 3. Factorial Calculation
+
+Calculates the factorial of a given non-negative integer.
+
+```javascript
+function factorial(n) {
+  if (n === 0) return 1;
+  let result = 1;
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+```
+
+### 2. Find Largest Number in an Array
+
+Finds the largest number in an array of numbers.
+
+```javascript
+function findLargest(arr) {
+  let largest = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    }
+  }
+  return largest;
+}
+```
+
+### 2. Find Largest Number in an Array
+
+Finds the largest number in an array of numbers.
+
+```javascript
+function findLargest(arr) {
+  let largest = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    }
+  }
+  return largest;
+}
+```
+
+### 2. Find Largest Number in an Array
+
+Finds the largest number in an array of numbers.
+
+```javascript
+function findLargest(arr) {
+  let largest = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    }
+  }
+  return largest;
+}
+```
+
+### 2. Find Largest Number in an Array
+
+Finds the largest number in an array of numbers.
+
+```javascript
+function findLargest(arr) {
+  let largest = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    }
+  }
+  return largest;
+}
+```
+
+### 2. Find Largest Number in an Array
+
+Finds the largest number in an array of numbers.
+
+```javascript
+function findLargest(arr) {
+  let largest = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    }
+  }
+  return largest;
+}
+```
+
+
