@@ -9,4 +9,10 @@ A collection of basic utility functions implemented in JavaScript for solving co
 Reverses a given string.
 
 ```javascript
-function reverseString(str)
+function reverseString(str) {
+  let reversedStr = ''; 
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversedStr += str[i];
+  }
+  return reversedStr;
+}
