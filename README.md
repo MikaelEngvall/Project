@@ -49,35 +49,34 @@ function factorial(n) {
 }
 ```
 
-### 2. Find Largest Number in an Array
+### 4. Fibonacci Sequence Generator
 
-Finds the largest number in an array of numbers.
+Generates an array containing the Fibonacci sequence up to n terms.
 
 ```javascript
-function findLargest(arr) {
-  let largest = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > largest) {
-      largest = arr[i];
-    }
+function fibonacci(n) {
+  const fibSequence = [];
+  if (n >= 1) fibSequence.push(0);
+  if (n >= 2) fibSequence.push(1);
+  for (let i = 2; i < n; i++) {
+    fibSequence.push(fibSequence[i - 1] + fibSequence[i - 2]);
   }
-  return largest;
+  return fibSequence;
 }
 ```
 
-### 2. Find Largest Number in an Array
+### 5. Anagram Checker
 
-Finds the largest number in an array of numbers.
+Checks if two strings are anagrams of each other (case insensitive).
 
 ```javascript
-function findLargest(arr) {
-  let largest = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > largest) {
-      largest = arr[i];
-    }
+ffunction areAnagrams(str1, str2) {
+  if (str1.length !== str2.length) {
+    return false;
   }
-  return largest;
+  const sortedStr1 = str1.toLowerCase().split('').sort().join('');
+  const sortedStr2 = str2.toLowerCase().split('').sort().join('');
+  return sortedStr1 === sortedStr2;
 }
 ```
 
