@@ -97,35 +97,50 @@ function countVowels(str) {
 }
 ```
 
-### 2. Find Largest Number in an Array
+### 7. Count Vowels According to English Grammar
 
-Finds the largest number in an array of numbers.
+Counts vowels and treats 'y' as a vowel if it's not the first character of a word.
 
 ```javascript
-function findLargest(arr) {
-  let largest = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > largest) {
-      largest = arr[i];
+function countVowelsAccordingToEnglishGrammar(str) {
+  const vowels = "aeiouAEIOU";
+  let count = 0;
+  const words = str.split(" ");
+  for (let word of words) {
+    for (let i = 0; i < word.length; i++) {
+      if (word[i] === 'y' || word[i] === 'Y') {
+        if (i !== 0) {
+          count++;
+        }
+      }
+      if (vowels.includes(word[i])) {
+        count++;
+      }
     }
   }
-  return largest;
+  return count;
 }
 ```
 
-### 2. Find Largest Number in an Array
+### 8. Check for Balanced Parentheses
 
-Finds the largest number in an array of numbers.
+Checks if a string contains balanced parentheses.
 
 ```javascript
-function findLargest(arr) {
-  let largest = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > largest) {
-      largest = arr[i];
+function isBalanced(str) {
+  let stack = [];
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    if (char === '(') {
+      stack.push(char);
+    } else if (char === ')') {
+      if (stack.length === 0) {
+        return false;
+      }
+      stack.pop();
     }
   }
-  return largest;
+  return stack.length === 0;
 }
 ```
 
