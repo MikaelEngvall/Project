@@ -16,3 +16,20 @@ function reverseString(str) {
   }
   return reversedStr;
 }
+```
+
+### 2. Find Largest Number in an Array
+
+Finds the largest number in an array of numbers.
+
+```javascript
+function findLargest(arr) {
+  let largest = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    }
+  }
+  return largest;
+}
+```
